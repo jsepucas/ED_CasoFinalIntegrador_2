@@ -11,3 +11,18 @@ public abstract class Habitat {
         this.limpieza = limpieza;
     }
 
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(double temperatura) {
+        this.temperatura = temperatura;
+    }
+
+    public double getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(double humedad) {
+        this.humedad = humedad;
+    }
