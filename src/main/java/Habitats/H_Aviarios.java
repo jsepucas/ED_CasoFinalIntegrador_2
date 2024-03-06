@@ -14,3 +14,16 @@ public class H_Aviarios extends Habitat {
     public int getCantidadDeNidos() {
         return cantidadDeNidos;
     }
+
+    public void setCantidadDeNidos(int cantidadDeNidos) {
+        this.cantidadDeNidos = cantidadDeNidos;
+    }
+
+    public String getTipoDeAves() {
+        return tipoDeAves;
+    }
+
+    public void setTipoDeAves(String tipoDeAves) {
+        this.tipoDeAves = tipoDeAves;
+    }
+
