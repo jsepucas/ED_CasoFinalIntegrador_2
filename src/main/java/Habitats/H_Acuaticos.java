@@ -3,8 +3,8 @@ package Habitats;
 public class H_Acuaticos extends Habitat {
     protected double profundidad;
 
-    public void HabitatAcuatico(double temperatura, double humedad, boolean estaLimpio, double profundidad) {
-            super(temperatura, humedad, estaLimpio);
+    public H_Acuaticos(double temperatura, double humedad, boolean estaLimpio, double profundidad) {
+        super(temperatura, humedad, estaLimpio);
         this.profundidad = profundidad;
     }
 
@@ -16,7 +16,6 @@ public class H_Acuaticos extends Habitat {
     public double getProfundidad() {
         return profundidad;
     }
-
 
     public void setProfundidad(double profundidad) {
         this.profundidad = profundidad;
@@ -30,4 +29,3 @@ public class H_Acuaticos extends Habitat {
         System.out.println("Profundidad: " + getProfundidad());
     }
 }
-
