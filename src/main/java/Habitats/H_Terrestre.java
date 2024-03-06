@@ -28,13 +28,15 @@ public class H_Terrestre extends Habitat {
         this.vegetacion = vegetacion;
     }
 
+
+    //Monitoreo de las condiciones del habitat acuático
     @Override
     public void monitorearCondiciones() {
         System.out.println("Temperatura: " + getTemperatura());
         System.out.println("Humedad: " + getHumedad());
         System.out.println("Esta limpio: " + isEstaLimpio());
         System.out.println("Tipo de suelo: " + getTipoDeSuelo());
-        System.out.println("Vegetacion: " + getVegetacion());  // Imprimir la nueva propiedad
+        System.out.println("Vegetacion: " + getVegetacion());  //
     }
 }
 
