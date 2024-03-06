@@ -1,4 +1,8 @@
 package Habitats;
 
-public class Habitat {
-}
+public abstract class Habitat {
+    protected double temperatura;
+    protected double humedad;
+    protected boolean limpieza;
+
+
