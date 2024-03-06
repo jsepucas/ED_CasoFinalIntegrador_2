@@ -3,12 +3,12 @@ package Habitats;
 public abstract class Habitat {
     protected double temperatura;
     protected double humedad;
-    protected boolean limpieza;
+    protected boolean EsLalimpieza;
 
     public Habitat(double temperatura, double humedad, boolean limpieza) {
         this.temperatura = temperatura;
         this.humedad = humedad;
-        this.limpieza = limpieza;
+        this.EsLalimpieza = limpieza;
     }
 
     public double getTemperatura() {
@@ -26,3 +26,12 @@ public abstract class Habitat {
     public void setHumedad(double humedad) {
         this.humedad = humedad;
     }
+
+    public boolean isEstaLimpio() {
+        boolean EsLaLimpieza = false;
+        return EsLaLimpieza;
+    }
+    public void setEstaLimpio(boolean estaLimpio) {
+        this.EsLalimpieza = estaLimpio;
+    }
+}
