@@ -24,4 +24,18 @@ public class HabitatTerrestre extends Habitat {
         return vegetacion;
     }
 
+    public void setVegetacion(String vegetacion) {
+        this.vegetacion = vegetacion;
+    }
+
+    @Override
+    public void monitorearCondiciones() {
+        System.out.println("Temperatura: " + getTemperatura());
+        System.out.println("Humedad: " + getHumedad());
+        System.out.println("Esta limpio: " + isEstaLimpio());
+        System.out.println("Tipo de suelo: " + getTipoDeSuelo());
+        System.out.println("Vegetacion: " + getVegetacion());  // Imprimir la nueva propiedad
+    }
+}
+
 
