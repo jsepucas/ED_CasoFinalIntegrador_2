@@ -1,4 +1,16 @@
 package Habitats;
 
-public class H_Aviarios {
-}
+public class H_Aviarios extends Habitat {
+    protected int cantidadDeNidos;
+    protected String tipoDeAves;
+
+    public HabitatAves(double temperatura, double humedad, boolean estaLimpio, int cantidadDeNidos, String tipoDeAves) {
+        super(temperatura, humedad, estaLimpio);
+        this.cantidadDeNidos = cantidadDeNidos;
+        this.tipoDeAves = tipoDeAves;
+    }
+
+    // Getter para cantidadDeNidos
+    public int getCantidadDeNidos() {
+        return cantidadDeNidos;
+    }

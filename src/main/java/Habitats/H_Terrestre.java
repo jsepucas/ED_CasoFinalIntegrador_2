@@ -1,10 +1,10 @@
 package Habitats;
 
-public class HabitatTerrestre extends Habitat {
+public class H_Terrestre extends Habitat {
     protected String tipoDeSuelo;
     protected String vegetacion;  // Nueva propiedad
 
-    public HabitatTerrestre(double temperatura, double humedad, boolean estaLimpio, String tipoDeSuelo, String vegetacion) {
+    public H_Terrestre(double temperatura, double humedad, boolean estaLimpio, String tipoDeSuelo, String vegetacion) {
         super(temperatura, humedad, estaLimpio);
         this.tipoDeSuelo = tipoDeSuelo;
         this.vegetacion = vegetacion;  // Inicializar la nueva propiedad

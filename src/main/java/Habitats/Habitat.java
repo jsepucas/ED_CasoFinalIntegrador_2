@@ -34,4 +34,6 @@ public abstract class Habitat {
     public void setEstaLimpio(boolean estaLimpio) {
         this.EsLalimpieza = estaLimpio;
     }
+
+    public abstract void monitorearCondiciones();
 }
