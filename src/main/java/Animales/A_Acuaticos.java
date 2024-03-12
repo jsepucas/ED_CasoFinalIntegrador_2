@@ -1,6 +1,6 @@
 package Animales;
 
-public class A_Acuaticos extends Animal{
+public abstract class A_Acuaticos extends Animal{
 
     protected String tipoAgua;
     protected String metodoRespiracion;
