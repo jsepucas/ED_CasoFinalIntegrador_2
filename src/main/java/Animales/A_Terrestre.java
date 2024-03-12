@@ -29,3 +29,16 @@ public class A_Terrestre extends Animal{
     }
 
 
+    public void setModoLocomocion(String modoLocomocion) {
+        this.modoLocomocion = modoLocomocion;
+    }
+
+    public String getDieta() {
+        return dieta;
+    }
+
+    public void setDieta(String dieta) {
+        this.dieta = dieta;
+    }
+
+
