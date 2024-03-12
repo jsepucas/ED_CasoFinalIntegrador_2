@@ -49,6 +49,23 @@ public String getNivelActividad() {
         this.dieta = dieta;
     }
 
+    @Override
+    public String toString() {
+        return "Tu animal terrestre: " +
+                "nombre='" + getNombre() + '\'' +
+                ", edad=" + getEdad() +
+                ", peso=" + getPeso() +
+                ", estadoSalud='" + getEstadoSalud() + '\'' +
+                ", vacunado=" + isVacunado() +
+                ", esteril=" + isEsteril() +
+                ", tipoHabitat='" + tipoHabitat + '\'' +
+                ", nivelActividad='" + nivelActividad + '\'' +
+                ", tipoAlimentacion='" + tipoAlimentacion + '\'' +
+                ", dieta='" + dieta + '\'' +
+                '}';
+    }
+
+
 }
 
 
