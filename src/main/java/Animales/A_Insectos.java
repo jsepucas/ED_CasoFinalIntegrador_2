@@ -16,3 +16,20 @@ public class Insecto extends Animal {
         this.habitat = habitat;
         this.esBeneficioso = esBeneficioso;
     }
+
+
+    public int getNumeroPatas() {
+        return numeroPatas;
+    }
+
+    public void setNumeroPatas(int numeroPatas) {
+        this.numeroPatas = numeroPatas;
+    }
+
+    public boolean isTieneAlas() {
+        return tieneAlas;
+    }
+
+    public void setTieneAlas(boolean tieneAlas) {
+        this.tieneAlas = tieneAlas;
+    }
