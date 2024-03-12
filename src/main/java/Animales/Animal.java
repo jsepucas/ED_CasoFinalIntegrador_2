@@ -58,4 +58,19 @@ public abstract class Animal {
     public void setVacunado(boolean vacunado) {
         this.vacunado = vacunado;
     }
+
+
+    public boolean isEsteril() {
+        return esteril;
+    }
+
+    public void setEsteril(boolean esteril) {
+        this.esteril = esteril;
+    }
+
+    public abstract void alimentar();
+    public abstract void realizarChequeoSalud();
+
+
 }
+
