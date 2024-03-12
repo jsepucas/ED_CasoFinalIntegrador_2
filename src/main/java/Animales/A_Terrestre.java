@@ -51,19 +51,19 @@ public String getNivelActividad() {
 
     @Override
     public String toString() {
-        return "Tu animal terrestre: " +
-                "nombre='" + getNombre() + '\'' +
-                ", edad=" + getEdad() +
-                ", peso=" + getPeso() +
-                ", estadoSalud='" + getEstadoSalud() + '\'' +
-                ", vacunado=" + isVacunado() +
-                ", esteril=" + isEsteril() +
-                ", tipoHabitat='" + tipoHabitat + '\'' +
-                ", nivelActividad='" + nivelActividad + '\'' +
-                ", tipoAlimentacion='" + tipoAlimentacion + '\'' +
-                ", dieta='" + dieta + '\'' +
-                '}';
+        return "Tu animal terrestre:\n" +
+                "Nombre: " + getNombre() + "\n" +
+                "Edad: " + getEdad() + " años\n" +
+                "Peso: " + getPeso() + " kg\n" +
+                "Estado de salud: " + getEstadoSalud() + "\n" +
+                "Vacunado: " + (isVacunado() ? "Sí" : "No") + "\n" +
+                "Esterilizado: " + (isEsteril() ? "Sí" : "No") + "\n" +
+                "Tipo de hábitat: " + tipoHabitat + "\n" +
+                "Nivel de actividad: " + nivelActividad + "\n" +
+                "Tipo de alimentación: " + tipoAlimentacion + "\n" +
+                "Dieta: " + dieta + "\n";
     }
+
 
 
 }
