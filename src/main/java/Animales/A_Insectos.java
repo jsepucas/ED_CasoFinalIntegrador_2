@@ -33,3 +33,28 @@ public class Insecto extends Animal {
     public void setTieneAlas(boolean tieneAlas) {
         this.tieneAlas = tieneAlas;
     }
+
+    public String getTipoAlimentacion() {
+        return tipoAlimentacion;
+    }
+
+    public void setTipoAlimentacion(String tipoAlimentacion) {
+        this.tipoAlimentacion = tipoAlimentacion;
+    }
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
+
+
+    public boolean isEsBeneficioso() {
+        return esBeneficioso;
+    }
+
+    public void setEsBeneficioso(boolean esBeneficioso) {
+        this.esBeneficioso = esBeneficioso;
+    }
