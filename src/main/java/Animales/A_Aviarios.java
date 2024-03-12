@@ -10,8 +10,8 @@ public abstract class A_Aviarios extends A_Acuaticos{
     private boolean esMigratoria;
 
 
-    public A_Aviarios(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril,
-               String tipoPlumaje, boolean esCapazDeVolar, String dieta, String habitatPreferido, boolean esMigratoria) {
+    public A_Aviarios (String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril,
+                       String tipoPlumaje, boolean esCapazDeVolar, String dieta, String habitatPreferido, boolean esMigratoria) {
         super(nombre, edad, peso, estadoSalud, vacunado, esteril);
         this.tipoPlumaje = tipoPlumaje;
         this.esCapazDeVolar = esCapazDeVolar;
@@ -59,6 +59,17 @@ public abstract class A_Aviarios extends A_Acuaticos{
 
     public void setEsMigratoria(boolean esMigratoria) {
         this.esMigratoria = esMigratoria;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", tipoPlumaje='" + tipoPlumaje + '\'' +
+                ", esCapazDeVolar=" + esCapazDeVolar +
+                ", dieta='" + dieta + '\'' +
+                ", habitatPreferido='" + habitatPreferido + '\'' +
+                ", esMigratoria=" + esMigratoria;
     }
 
 
