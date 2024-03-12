@@ -58,3 +58,13 @@ public class Insecto extends Animal {
     public void setEsBeneficioso(boolean esBeneficioso) {
         this.esBeneficioso = esBeneficioso;
     }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Alimentando al insecto " + getNombre() + " con una dieta " + tipoAlimentacion);
+    }
+
+    @Override
+    public void realizarChequeoSalud() {
+        System.out.println("Realizando chequeo de salud al insecto " + getNombre() + ". Estado de salud: " + getEstadoSalud());
+    }
