@@ -57,5 +57,10 @@ public class A_Aviarios extends A_Acuaticos{
         return esMigratoria;
     }
 
+    public void setEsMigratoria(boolean esMigratoria) {
+        this.esMigratoria = esMigratoria;
+    }
+
+
 }
 
