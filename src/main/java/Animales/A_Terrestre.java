@@ -1,23 +1,32 @@
 package Animales;
 
-public abstract class A_Terrestre extends Animal{
+public class A_Terrestre extends Animal{
 
-        private String tipoHabitat;
-        private String modoLocomocion;
-        private String dieta;
+    private String tipoHabitat;
+    private String nivelActividad;
+    private String tipoAlimentacion;
+    private String dieta;
 
-    public A_Terrestre(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril,
-                           String tipoHabitat, String modoLocomocion, String dieta) {
+    public A_Terrestre(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril, String tipoHabitat, String nivelActividad, String tipoAlimentacion, String dieta) {
         super(nombre, edad, peso, estadoSalud, vacunado, esteril);
         this.tipoHabitat = tipoHabitat;
-        this.modoLocomocion = modoLocomocion;
+        this.nivelActividad = nivelActividad;
+        this.tipoAlimentacion = tipoAlimentacion;
         this.dieta = dieta;
-
-
     }
 
     public A_Terrestre(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril) {
         super(nombre, edad, peso, estadoSalud, vacunado, esteril);
+    }
+
+    @Override
+    public void alimentar() {
+
+    }
+
+    @Override
+    public void realizarChequeoSalud() {
+
     }
 
     public String getTipoHabitat() {
@@ -28,13 +37,8 @@ public abstract class A_Terrestre extends Animal{
         this.tipoHabitat = tipoHabitat;
     }
 
-    public String getModoLocomocion() {
-        return modoLocomocion;
-    }
-
-
-    public void setModoLocomocion(String modoLocomocion) {
-        this.modoLocomocion = modoLocomocion;
+public String getNivelActividad() {
+        return nivelActividad;
     }
 
     public String getDieta() {

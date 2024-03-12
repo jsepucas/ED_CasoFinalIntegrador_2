@@ -1,6 +1,6 @@
 package Animales;
 
-public class A_Aviarios extends A_Acuaticos{
+public abstract class A_Aviarios extends A_Acuaticos{
 
     private String tipoPlumaje;
     private boolean esCapazDeVolar;

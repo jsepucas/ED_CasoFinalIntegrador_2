@@ -18,6 +18,10 @@ public abstract class Animal {
         this.esteril = esteril;
     }
 
+    public Animal() {
+
+    }
+
     public String getNombre() {
         return nombre;
     }
