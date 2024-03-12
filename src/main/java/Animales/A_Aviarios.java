@@ -19,5 +19,23 @@ public class A_Aviarios extends A_Acuaticos{
         this.habitatPreferido = habitatPreferido;
         this.esMigratoria = esMigratoria;
     }
+
+
+    public String getTipoPlumaje() {
+        return tipoPlumaje;
+    }
+
+    public void setTipoPlumaje(String tipoPlumaje) {
+        this.tipoPlumaje = tipoPlumaje;
+    }
+
+    public boolean isEsCapazDeVolar() {
+        return esCapazDeVolar;
+    }
+
+    public void setEsCapazDeVolar(boolean esCapazDeVolar) {
+        this.esCapazDeVolar = esCapazDeVolar;
+    }
+
 }
 
