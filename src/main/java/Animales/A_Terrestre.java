@@ -16,4 +16,16 @@ public class A_Terrestre extends Animal{
 
     }
 
+    public String getTipoHabitat() {
+        return tipoHabitat;
+    }
+
+    public void setTipoHabitat(String tipoHabitat) {
+        this.tipoHabitat = tipoHabitat;
+    }
+
+    public String getModoLocomocion() {
+        return modoLocomocion;
+    }
+
 
