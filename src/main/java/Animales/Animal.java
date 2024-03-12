@@ -18,5 +18,44 @@ public abstract class Animal {
         this.esteril = esteril;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getEstadoSalud() {
+        return estadoSalud;
+    }
+
+    public void setEstadoSalud(String estadoSalud) {
+        this.estadoSalud = estadoSalud;
+    }
+
+    public boolean isVacunado() {
+        return vacunado;
+    }
+
+    public void setVacunado(boolean vacunado) {
+        this.vacunado = vacunado;
+    }
 }
