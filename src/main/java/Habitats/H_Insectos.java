@@ -4,14 +4,14 @@ public class H_Insectos extends Habitat{
     protected int cantidadDeHormigueros;
     protected String tipoDeInsectos;
 
-    public H_Insectos(double temperatura, double humedad, boolean estaLimpio, int cantidadDeHormigueros, String tipoDeInsectos) {
-        super(temperatura, humedad, estaLimpio);
+    public H_Insectos(String name, double temperatura, double humedad, boolean estaLimpio, int cantidadDeHormigueros, String tipoDeInsectos) {
+        super(name, temperatura, humedad, estaLimpio);
         this.cantidadDeHormigueros = cantidadDeHormigueros;
         this.tipoDeInsectos = tipoDeInsectos;
     }
 
-    public H_Insectos(double temperatura, double humedad, boolean limpieza) {
-        super(temperatura, humedad, limpieza);
+    public H_Insectos(String name, double temperatura, double humedad, boolean limpieza) {
+        super(name, temperatura, humedad, limpieza);
     }
 
     public int getCantidadDeHormigueros() {
@@ -32,9 +32,6 @@ public class H_Insectos extends Habitat{
 
     @Override
     public void monitorearCondiciones() {
-        System.out.println("Temperatura: " + getTemperatura());
-        System.out.println("Humedad: " + getHumedad());
-        System.out.println("Esta limpio: " + isEstaLimpio());
         System.out.println("Cantidad de hormigueros: " + getCantidadDeHormigueros());
         System.out.println("Tipo de insectos: " + getTipoDeInsectos());
     }
