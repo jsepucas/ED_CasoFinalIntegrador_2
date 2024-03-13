@@ -1,24 +1,31 @@
 package Animales;
 
-public abstract class A_Insectos extends Animal {
-    protected    int numeroPatas;
+public class A_Insectos extends Animal {
+    protected int numeroPatas;
     protected boolean tieneAlas;
-    protected String tipoAlimentacion;
+    protected String alimentos;
     protected String habitat;
     protected boolean esBeneficioso;
 
     public A_Insectos (String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril,
-                   int numeroPatas, boolean tieneAlas, String tipoAlimentacion, String habitat, boolean esBeneficioso) {
+                       String numeroPatas, boolean tieneAlas, String alimentos, String habitat, String esBeneficioso) {
         super(nombre, edad, peso, estadoSalud, vacunado, esteril);
-        this.numeroPatas = numeroPatas;
+        this.numeroPatas = Integer.parseInt(numeroPatas);
         this.tieneAlas = tieneAlas;
-        this.tipoAlimentacion = tipoAlimentacion;
+        this.alimentos = alimentos;
         this.habitat = habitat;
-        this.esBeneficioso = esBeneficioso;
+        this.esBeneficioso = Boolean.parseBoolean(esBeneficioso);
     }
 
-    public A_Insectos(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril) {
-        super(nombre, edad, peso, estadoSalud, vacunado, esteril);
+
+    @Override
+    public void alimentar() {
+
+    }
+
+    @Override
+    public void realizarChequeoSalud() {
+
     }
 
 
@@ -38,12 +45,12 @@ public abstract class A_Insectos extends Animal {
         this.tieneAlas = tieneAlas;
     }
 
-    public String getTipoAlimentacion() {
-        return tipoAlimentacion;
+    public String getAlimentos() {
+        return alimentos;
     }
 
-    public void setTipoAlimentacion(String tipoAlimentacion) {
-        this.tipoAlimentacion = tipoAlimentacion;
+    public void setAlimentos(String tipoAlimentacion) {
+        this.alimentos = tipoAlimentacion;
     }
 
     public String getHabitat() {
@@ -61,6 +68,22 @@ public abstract class A_Insectos extends Animal {
 
     public void setEsBeneficioso(boolean esBeneficioso) {
         this.esBeneficioso = esBeneficioso;
+    }
+
+@Override
+    public String toString() {
+        return "Insecto:\n" +
+                "  Nombre: " + getNombre() + "\n" +
+                "  Edad: " + getEdad() + "\n" +
+                "  Peso: " + getPeso() + " kg\n" +
+                "  Estado de Salud: " + getEstadoSalud() + "\n" +
+                "  Vacunado: " + (isVacunado() ? "Sí" : "No") + "\n" +
+                "  Esterilizado: " + (isEsteril() ? "Sí" : "No") + "\n" +
+                "  Número de Patas: " + numeroPatas + "\n" +
+                "  Tiene Alas: " + (tieneAlas ? "Sí" : "No") + "\n" +
+                "  Tipo de Alimentación: " + alimentos + "\n" +
+                "  Hábitat: " + habitat + "\n" +
+                "  Es Beneficioso: " + (esBeneficioso ? "Sí" : "No");
     }
 
 }
