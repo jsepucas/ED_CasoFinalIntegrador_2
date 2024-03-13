@@ -19,6 +19,10 @@ public class A_Acuaticos extends Animal{
     public A_Acuaticos(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril) {
     }
 
+    public A_Acuaticos() {
+
+    }
+
     @Override
     public void alimentar() {
         
