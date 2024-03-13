@@ -1,13 +1,12 @@
 package Animales;
 
-public abstract class A_Aviarios extends A_Acuaticos{
+public class A_Aviarios extends A_Acuaticos{
 
-    private String tipoPlumaje;
-    private boolean esCapazDeVolar;
-    private String dieta;
-
-    private String habitatPreferido;
-    private boolean esMigratoria;
+    protected String tipoPlumaje;
+    protected boolean esCapazDeVolar;
+    protected String dieta;
+    protected String habitatPreferido;
+    protected boolean esMigratoria;
 
 
     public A_Aviarios (String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril,
@@ -18,6 +17,10 @@ public abstract class A_Aviarios extends A_Acuaticos{
         this.dieta = dieta;
         this.habitatPreferido = habitatPreferido;
         this.esMigratoria = esMigratoria;
+    }
+
+    public A_Aviarios(String nombre, int edad, double peso, String estadoSalud, boolean vacunado, boolean esteril, String tipoAve, boolean puedeVolar, String alimentacion) {
+
     }
 
 
