@@ -1,14 +1,24 @@
 package Habitats;
 
 public abstract class Habitat {
+    protected String name;
     protected double temperatura;
     protected double humedad;
     protected boolean EsLalimpieza;
 
-    public Habitat(double temperatura, double humedad, boolean limpieza) {
+    public Habitat(String name, double temperatura, double humedad, boolean limpieza) {
+        this.name = name;
         this.temperatura = temperatura;
         this.humedad = humedad;
         this.EsLalimpieza = limpieza;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getTemperatura() {
@@ -36,4 +46,15 @@ public abstract class Habitat {
     }
 
     public abstract void monitorearCondiciones();
+
+    @Override
+    public String toString() {
+        return "Habitat{" +
+                "name=" + name + '\'' +
+                ", temperatura=" + temperatura +
+                ", humedad=" + humedad +
+                ", EsLalimpieza=" + EsLalimpieza +
+                '}';
+    }
 }
+

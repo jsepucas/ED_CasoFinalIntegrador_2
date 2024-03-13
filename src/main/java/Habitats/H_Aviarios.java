@@ -4,14 +4,14 @@ public class H_Aviarios extends Habitat {
     protected int cantidadDeNidos;
     protected String tipoDeAves;
 
-    public H_Aviarios(double temperatura, double humedad, boolean estaLimpio, int cantidadDeNidos, String tipoDeAves) {
-        super(temperatura, humedad, estaLimpio);
+    public H_Aviarios(String name, double temperatura, double humedad, boolean estaLimpio, int cantidadDeNidos, String tipoDeAves) {
+        super(name, temperatura, humedad, estaLimpio);
         this.cantidadDeNidos = cantidadDeNidos;
         this.tipoDeAves = tipoDeAves;
     }
 
-    public H_Aviarios(double temperatura, double humedad, boolean limpieza) {
-        super(temperatura, humedad, limpieza);
+    public H_Aviarios(String name, double temperatura, double humedad, boolean limpieza) {
+        super(name, temperatura, humedad, limpieza);
     }
 
     // Getter para cantidadDeNidos
@@ -33,9 +33,6 @@ public class H_Aviarios extends Habitat {
 
     @Override
     public void monitorearCondiciones() {
-        System.out.println("Temperatura: " + getTemperatura());
-        System.out.println("Humedad: " + getHumedad());
-        System.out.println("Esta limpio: " + isEstaLimpio());
         System.out.println("Cantidad de nidos: " + getCantidadDeNidos());
         System.out.println("Tipo de aves: " + getTipoDeAves());
     }
