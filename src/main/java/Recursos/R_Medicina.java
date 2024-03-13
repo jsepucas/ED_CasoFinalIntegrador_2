@@ -10,13 +10,6 @@ public class R_Medicina extends Recursos {
         super(nombre, cantidad, fechaCaducidad);
     }
 
-    public void R_Medicina(String nombre, int cantidad, Date fechaCaducidad, String tipoMedicina, String dosis) {
-        super(nombre, cantidad, fechaCaducidad);
-        this.tipoMedicina = tipoMedicina;
-        this.dosis = dosis;
-    }
-
-
     // Getters y setters
     public String getTipoMedicina() {
         return tipoMedicina;
@@ -36,7 +29,6 @@ public class R_Medicina extends Recursos {
 
     @Override
     public void describir() {
-        System.out.println("Tipo de medicina: " + tipoMedicina + ", Dosis recomendada: " + dosis);
-    }
-}
+        System.out.println("Tipo de medicina: " + tipoMedicina + ", Dosis recomendada: " +dosis);
+    }}
 

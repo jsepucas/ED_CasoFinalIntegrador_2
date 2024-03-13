@@ -13,6 +13,7 @@ public class ZoologicoVirtual {
     public static void main(String[] args) {
         List<Animal> animales = new ArrayList<>();
         List<Habitat> Habitats = new ArrayList<>();
+        List<Pedido> pedidosPendientes = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
         //hábitats creados
@@ -292,7 +293,7 @@ public class ZoologicoVirtual {
                 System.out.println("1. Administración de animales");
                 System.out.println("2. Seguridad del Zoológico");
                 System.out.println("3. Recursos de los animales");
-                System.out.println("4. Ver pedidos pendientes del Zoológic");
+                System.out.println("4. Ver pedidos pendientes del Zoológico");
                 System.out.println("5. Salir al menú");
 
                 int choiceTrabajador = scanner.nextInt();
@@ -340,7 +341,7 @@ public class ZoologicoVirtual {
                         }
                     }
                     else if (choiceTrabajador == 4){
-                        System.out.println("¿Qué quieres ver?");
+
                     }
                     else if (choiceTrabajador == 5){
                         System.out.println("¿Estás seguro de querer salir?");
