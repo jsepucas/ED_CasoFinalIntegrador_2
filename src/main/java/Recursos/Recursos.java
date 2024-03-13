@@ -1,5 +1,4 @@
 package Recursos;
-import java.util.Date;
 
 public abstract class Recursos {
     protected String nombre;

@@ -49,7 +49,7 @@ public class Mantenimiento {
 
     public void setFechaFinalizacion(Date fechaFinalizacion) {
         this.fechaFinalizacion = fechaFinalizacion;
-        this.completado = true; // Marcar la tarea como completada cuando se establece la fecha de finalización
+        this.completado = true;
     }
 
     public boolean isCompletado() {
@@ -59,7 +59,7 @@ public class Mantenimiento {
     public void setCompletado(boolean completado) {
         this.completado = completado;
         if(completado) {
-            this.fechaFinalizacion = new Date(); // Establecer la fecha de finalización al momento actual si la tarea se marca como completada
+            this.fechaFinalizacion = new Date();
         }
     }
 

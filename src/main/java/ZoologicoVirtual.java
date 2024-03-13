@@ -7,6 +7,7 @@ import Animales.*;
 import Habitats.*;
 import InteracciónVisitante.*;
 import Recursos.*;
+import MantenimientoYSeguridad.*;
 
 public class ZoologicoVirtual {
 
@@ -311,6 +312,7 @@ public class ZoologicoVirtual {
                     System.out.println("1. Ver recursos disponibles");
                     System.out.println("2. Añadir nuevo recurso");
                     System.out.println("3. Volver");
+                    System.out.println("Para ver los recursos disponibles, primero tendrás que añadir uno nuevo en la opción 2.");
                     int opcionRecursos = scanner.nextInt();
                     scanner.nextLine();
 
