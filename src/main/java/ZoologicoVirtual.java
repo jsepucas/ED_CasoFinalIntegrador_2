@@ -298,3 +298,81 @@ public class ZoologicoVirtual {
                 int choiceTrabajador = scanner.nextInt();
                 scanner.nextLine();
 
+                if (choiceTrabajador == 1){
+                    System.out.println("¿Qué quieres ver?");
+                }
+                else if (choiceTrabajador == 2){
+                    System.out.println("¿Qué quieres ver?");
+                }
+                else if (choiceTrabajador == 3){
+
+                    System.out.println("Gestión de Recursos del Zoológico");
+                    System.out.println("1. Ver recursos disponibles");
+                    System.out.println("2. Añadir nuevo recurso");
+                    System.out.println("3. Volver");
+                    int opcionRecursos = scanner.nextInt();
+                    scanner.nextLine();
+
+
+// Dentro de tu case 2: Trabajador, después de tus opciones existentes:
+                    if (choiceTrabajador == 3) { // Recursos de los animales
+                        System.out.println("Gestión de Recursos del Zoológico");
+                        System.out.println("1. Ver recursos disponibles");
+                        System.out.println("2. Añadir nuevo recurso");
+                        System.out.println("3. Volver");
+                        opcionRecursos = scanner.nextInt();
+                        scanner.nextLine(); // Consumir la nueva línea
+
+                        switch (opcionRecursos) {
+                            case 1:
+
+                                System.out.println("Recursos disponibles:");
+                                break;
+                            case 2:
+                                System.out.println("Añadiendo nuevo recurso:");
+                                break;
+                            case 3:
+
+                                break;
+                            default:
+                                System.out.println("Opción no válida.");
+                                break;
+                        }
+                    }
+                    else if (choiceTrabajador == 4){
+                        System.out.println("¿Qué quieres ver?");
+                    }
+                    else if (choiceTrabajador == 5){
+                        System.out.println("¿Estás seguro de querer salir?");
+                        System.out.println("1. Sí");
+                        System.out.println("2. No, quiero volver a la terminal");
+                    }
+
+
+                    scanner.close();
+
+
+
+                }if (choice == 3) { // Opción de Salir
+                    System.out.println("¿Estás seguro de querer salir?");
+                    System.out.println("1. Sí");
+                    System.out.println("2. No, quiero volver a la terminal");
+
+                    int confirmacionSalida = scanner.nextInt();
+                    scanner.nextLine(); // Consumir la nueva línea
+
+                    if (confirmacionSalida == 1) {
+                        System.out.println("Gracias por visitar el zoológico. ¡Hasta pronto!");
+                        break; // Rompe el bucle y termina el programa
+                    } else if (confirmacionSalida == 2) {
+                        continue; // Regresa al menú principal
+                    } else {
+                        System.out.println("Opción no válida. Volviendo al menú principal.");
+                        continue; // Regresa al menú principal
+                    }
+
+                }
+            }
+        }}}
+
+
