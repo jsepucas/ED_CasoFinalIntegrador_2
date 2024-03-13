@@ -1,7 +1,7 @@
 package Recursos;
 import java.util.Date;
 
-public class Recursos {
+public abstract class Recursos {
     protected String nombre;
     protected int cantidad;
     protected Date fechaCaducidad; // Null para recursos sin fecha de caducidad
@@ -38,7 +38,16 @@ public class Recursos {
     public void setFechaCaducidad(Date fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
-
+@Override
+    public String toString() {
+        return "Recursos{" +
+                "nombre='" + nombre + '\'' +
+                ", cantidad=" + cantidad +
+                ", fechaCaducidad=" + fechaCaducidad +
+                '}';
 
     }
+
+    public abstract void describir();
+}
 
