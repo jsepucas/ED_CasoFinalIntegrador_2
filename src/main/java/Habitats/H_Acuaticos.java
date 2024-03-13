@@ -3,13 +3,13 @@ package Habitats;
 public class H_Acuaticos extends Habitat {
     protected double profundidad;
 
-    public H_Acuaticos(double temperatura, double humedad, boolean estaLimpio, double profundidad) {
-        super(temperatura, humedad, estaLimpio);
+    public H_Acuaticos(String name, double temperatura, double humedad, boolean estaLimpio, double profundidad) {
+        super(name, temperatura, humedad, estaLimpio);
         this.profundidad = profundidad;
     }
 
-    public H_Acuaticos(double temperatura, double humedad, boolean limpieza) {
-        super(temperatura, humedad, limpieza);
+    public H_Acuaticos(String name, double temperatura, double humedad, boolean limpieza) {
+        super(name, temperatura, humedad, limpieza);
     }
 
     //Getters y setters de la clase H_Acuaticos
@@ -22,10 +22,8 @@ public class H_Acuaticos extends Habitat {
     }
 
     //Monitoreo de las condiciones del habitat acuático
+    @Override
     public void monitorearCondiciones() {
-        System.out.println("Temperatura: " + getTemperatura());
-        System.out.println("Humedad: " + getHumedad());
-        System.out.println("Esta limpio: " + isEstaLimpio());
         System.out.println("Profundidad: " + getProfundidad());
     }
 }
