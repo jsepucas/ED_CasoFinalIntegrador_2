@@ -1,9 +1,9 @@
 # ED_CasoFinalIntegrador_2
 
+Link: https://github.com/jsepucas/ED_CasoFinalIntegrador_2.git
+
 # Caso Final Integrador: Sistema de Gestión para Zoológico Inteligente
 Caso Final Integrador Juan Sebastian Sepúlveda Castro
-
-LINK:https://github.com/jsepucas/ED_CasoFinalIntegrador_2.git
 
 ## <u>FUNCIONAMIENTO</u>
 
