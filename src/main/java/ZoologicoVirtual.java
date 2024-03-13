@@ -346,7 +346,7 @@ public class ZoologicoVirtual {
                     else if (choiceTrabajador == 5){
                         System.out.println("¿Estás seguro de querer salir?");
                         System.out.println("1. Sí");
-                        System.out.println("2. No, quiero volver a la terminal");
+                        System.out.println("2. No, quiero volver a la terminall");
                     }
 
 
