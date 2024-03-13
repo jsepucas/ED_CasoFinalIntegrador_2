@@ -1,5 +1,6 @@
 package MantenimientoYSeguridad;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Mantenimiento {
@@ -60,4 +61,18 @@ public class Mantenimiento {
         if(completado) {
             this.fechaFinalizacion = new Date(); // Establecer la fecha de finalización al momento actual si la tarea se marca como completada
         }
-    }}
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String fechaProgStr = fechaProgramada != null ? sdf.format(fechaProgramada) : "No especificada";
+        String fechaFinStr = completado && fechaFinalizacion != null ? sdf.format(fechaFinalizacion) : "No completada";
+
+        return "Descripción: " + descripcion + "\n" +
+                "Tipo: " + tipo + "\n" +
+                "Fecha Programada: " + fechaProgStr + "\n" +
+                "Fecha de Finalización: " + fechaFinStr + "\n" +
+                "Completado: " + (completado ? "Sí" : "No");
+    }
+}

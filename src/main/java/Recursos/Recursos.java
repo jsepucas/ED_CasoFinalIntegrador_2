@@ -13,6 +13,9 @@ public abstract class Recursos {
         this.fechaCaducidad = fechaCaducidad;
     }
 
+    public Recursos(String nombreRecurso) {
+    }
+
     // Getters
     public String getNombre() {
         return nombre;
